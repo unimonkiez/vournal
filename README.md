@@ -24,8 +24,7 @@
 
 ### Usage
 * `npm start` - Start website on [localhost:8080](http://localhost:8080) with **watching**.
-* `yarn workspace client run start` - Start website on [localhost:8080](http://localhost:8080) with mock server and **watching**.
-* `yarn workspace server run start` - Start website on [localhost:8080](http://localhost:8080) only server without client with **watching**.
+* `yarn workspace app run start` - Start website on [localhost:8080](http://localhost:8080) with mock server and **watching**.
 * `npm run lint[:report][:error][:fix]` - Run lints usings eslint, recommand to install eslint-plugin on your editor.
 * `npm run typecheck` - Run typechecking on project.
 

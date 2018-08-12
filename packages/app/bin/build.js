@@ -9,6 +9,7 @@ module.exports = new Build({
   version: packageJson.version,
   isClient: false,
   entry: {
+    setup: path.resolve(rootPath, 'src', 'setup'),
     app: path.resolve(rootPath, 'src', 'index'),
   },
   outputDir: path.resolve(__dirname, '..', 'dist'),

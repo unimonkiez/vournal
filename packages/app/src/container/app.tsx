@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Provider from 'src/provider';
-import { Router } from './router';
+import { HelloWorld } from './hello-world';
 
 export default class App extends Component {
   render() {
     return (
       <Provider>
-        <Router />
+        <HelloWorld />
       </Provider>
     );
   }

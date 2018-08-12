@@ -11,9 +11,7 @@ installation:
   artifacts:
     paths:
       - ./node_modules
-      - ./client/node_modules
-      - ./server/node_modules
-      - ./scripts/node_modules
+      - ./app/node_modules
     expire_in: 1 day
 
 lint:

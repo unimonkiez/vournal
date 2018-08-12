@@ -1,14 +1,12 @@
 {
-  "name": "client",
+  "name": "app",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "node ./bin/run-build",
-    "start": "node ./bin/mock/bin/start",
-    "start:all": "node ./bin/start",
-    "start:debug": "node --inspect-brk ./bin/start",
+    "start": "node ./bin/start",
     "typecheck": "tsc"
   },
   "author": "",
@@ -18,7 +16,6 @@
     "@types/prop-types": "^15.5.3",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
-    "apollo-boost": "^0.1.12",
     "computed-async-mobx": "^4.1.0",
     "history": "^4.7.2",
     "mobx": "^5.0.3",
@@ -29,12 +26,8 @@
     "react-dom": "^16.4.2"
   },
   "devDependencies": {
-    "express-graphql": "^0.6.12",
-    "graphql": "^0.13.2",
-    "graphql-tag": "^2.9.2",
+    "electron": "^2.0.7",
     "react-hot-loader": "^4.3.4",
-    "scripts": "1.0.0",
-    "cli": "1.0.0",
-    "server": "1.0.0"
+    "scripts": "1.0.0"
   }
 }

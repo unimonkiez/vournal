@@ -88,6 +88,11 @@ const getWebpackConfig = ({
     },
     plugins: [
       new TsDeclarationWebpackPlugin(),
+      new HtmlWebpackPlugin({
+        minify: {},
+        inject: false,
+        template: path.join(rootPath, 'src', 'web', 'index.html'),
+      }),
       new webpack.DefinePlugin(Object.assign({
         __PROD__: isClient ? JSON.stringify(isProd) : 'process.env.NODE_ENV',
         __DEV__: isClient ? JSON.stringify(!isProd) : '!process.env.NODE_ENV',
@@ -100,13 +105,6 @@ const getWebpackConfig = ({
         },
       } : {})),
     ]
-      .concat(isClient ? [
-        new HtmlWebpackPlugin({
-          minify: {},
-          template: path.join(rootPath, 'src', 'web', 'index.html'),
-          inject: 'body',
-        }),
-      ] : [])
       .concat(isWebpackDevServer ? [
         new webpack.HotModuleReplacementPlugin(),
       ] : []),
