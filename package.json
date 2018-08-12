@@ -5,7 +5,7 @@
   ],
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./packages/app/dist/setup.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unimonkiez/mono-js-boilerplate.git"
@@ -19,7 +19,8 @@
   "homepage": "https://github.com/unimonkiez/mono-js-boilerplate#readme",
   "scripts": {
     "build": "lerna run build",
-    "start": "yarn workspace client run start:all",
+    "start": "yarn workspace app run start",
+    "start:app": "npm run build && electron .",
     "typecheck": "lerna run typecheck",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:err": "npm run lint -- --quiet",
